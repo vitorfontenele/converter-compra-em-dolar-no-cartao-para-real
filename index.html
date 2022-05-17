@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de compra em dólar no cartão</title>
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="card mg-bottom mg-top">
+            <div class="card-header">
+                <h1>Quanto custa uma compra internacional feita no seu cartão?</h1>
+            </div>
+            <div class="card-body">
+                <label for="product-price-in-dollars">Preço da compra em dólares (US$)</label>
+                <input id="product-price-in-dollars" type="number" value="0.00" min="0" class="form-control mg-bottom">
+                <label for="bank-spread">Spread bancário (%)</label>
+                <input id="bank-spread" type="number" min="0" max="100" value="4" step="0.01" class="form-control mg-bottom">
+                <label for="paid-value-in-brazilian-reais"> <strong>Valor a ser pago em reais (R$)</strong></label>
+                <input id="paid-value-in-brazilian-reais" type="number" value="0.00" class="form-control mg-bottom" readonly>
+            </div>
+        </div>
+        <div class="card mg-bottom">
+            <div class="card-header">
+                <h2>Como funciona o cálculo?</h2>
+            </div>
+            <div class="card-body">
+                <p>Primeiramente, é importante saber que, em uma compra feita no cartão, o câmbio utilizado na conversão do Dólar (US$) para o Real (R$) não é o câmbio comercial, mas sim o <strong>Dólar PTAX</strong>. O Dólar PTAX é informado pelo <strong>BACEN</strong> (Banco Central), baseado em uma média das negociações feitas no mercado durante o dia.</p>
+                <p>A taxa de conversão do Dólar PTAX tende a ser um pouco maior do que a taxa de conversão do câmbio comercial, mas inferior à taxa de conversão do câmbio turismo.</p>
+                <p>No entanto, quando você faz uma compra no seu cartão de crédito no exterior, não basta realizar essa simples conversão para saber o valor que você terá de pagar em reais. Ou seja, o valor final da compra na sua fatura não irá se resumir a uma simples conversão do valor gasto em dólares, utilizando o câmbio PTAX, para reais.</p>
+                <p>Isso acontece porque sobre essa compra também incide o <strong>IOF</strong> e a taxa de <strong>Spread</strong>  bancário. O que são esses valores?</p>
+                <p>O IOF (Imposto sobre Operações Financeiras) equivale a uma alíquota fixa de 6,38% que você deverá pagar em compras no cartão de crédito no exterior. Portanto, independente do dia em que você esteja, esse valor é fixo.</p>
+                <p>O Spread bancário, por sua vez, como o nome sugere, é um percentual cobrado pelo seu banco sobre a compra. Como uma regra geral, esse valor fica perto de 4% sobre o valor da compra que você fez. Porém, pode variar ligeiramente para mais ou para menos. Você pode editar esse valor para o valor correto do Spread do seu banco, embora ele esteja pré-definido em 4%.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
