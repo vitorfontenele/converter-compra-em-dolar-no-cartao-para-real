@@ -1,7 +1,9 @@
 $(document).ready(function () {
+  //Eventos keyup (usuario altera o valor de um dos inputs)
   $("#product-price-in-dollars").keyup(updatePaidValue);
   $("#bank-spread").keyup(updatePaidValue);
 
+  //Funcao principal
   function updatePaidValue() {
     verifyMin(this);
     let oneDayToMilliseconds = 8.64e7;
@@ -23,6 +25,7 @@ $(document).ready(function () {
     });
   }
 
+  //Formatacao das datas para uso na chamada da API
   function formatDate(date) {
     let day = date.getDate();
     if (day < 10) {
@@ -37,6 +40,7 @@ $(document).ready(function () {
     return dayArr.join("-");
   }
 
+  //Correcao dos inputs caso o usuario digite um valor menor que o minimo
   function verifyMin(arg) {
     let v = Number($(arg).val());
     let min = Number($(arg).attr("min"));
