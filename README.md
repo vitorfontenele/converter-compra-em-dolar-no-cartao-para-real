@@ -3,13 +3,10 @@ Uma página cujo objetivo é permitir a conversão do valor de uma compra feita 
 
 ## Tecnologias utilizadas
 
-<ul>
-  <li><a href="https://jquery.com/">JQuery</a></li>
-  <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
-</ul>
+- [JQuery](https://jquery.com/)
+- [Bootstrap](https://getbootstrap.com/)
 
 ## Links úteis
 
-<ul>
-  <li><a href="https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/swagger-ui3#/">API do Banco Central</a></li>
-  <li><a href="https://www.iq.com.br/cartoes/artigos/compras-internacionais-cartoes">Compras internacionais no cartão de crédito: como funciona e quais as taxas?</a></li>
+- [API do Banco Central do Brasil](https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/swagger-ui3#/)
+- [Compras internacionais no cartão de crédito: como funciona e quais as taxas?](https://www.iq.com.br/cartoes/artigos/compras-internacionais-cartoes)
