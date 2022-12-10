@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://github.com/vitorfontenele/converter-compra-em-dolar-no-cartao-para-real">
-    <img src="" alt="Logo" width="80" height="80">
+    <img src="https://images.unsplash.com/photo-1623118176012-9b0c6fa0712d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Logo" width="170" height="120">
   </a>
   <h3 align="center">converter-compra-em-dolar-no-cartao-para-real</h3>
   <a href="https://vitorfontenele.github.io/converter-compra-em-dolar-no-cartao-para-real//">https://vitorfontenele.github.io/converter-compra-em-dolar-no-cartao-para-real/</a>
